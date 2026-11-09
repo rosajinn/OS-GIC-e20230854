@@ -1,0 +1,9 @@
+    PID TTY          TIME CMD
+1770664 pts/2    00:00:00 bash
+1771087 pts/2    00:00:00 sleep
+1771379 pts/2    00:00:00 sleep
+1771437 pts/2    00:00:00 sleep
+1771443 pts/2    00:00:00 sleep
+1771449 pts/2    00:00:00 sleep
+1771455 pts/2    00:00:00 sleep
+1771474 pts/2    00:00:00 ps

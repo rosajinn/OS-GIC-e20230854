@@ -1,0 +1,13 @@
+/home/gic-thea-rosa/oslab-work/lab1/task2_files
+forest.txt
+silver.txt
+This is file silver
+This is file forest
+forest.txt
+silver.txt
+silver_copy.txt
+forest_renamed.txt
+silver.txt
+silver_copy.txt
+forest_renamed.txt
+silver.txt
