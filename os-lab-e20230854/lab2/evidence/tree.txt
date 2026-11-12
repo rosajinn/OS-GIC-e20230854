@@ -1,0 +1,6 @@
+reports/README.txt
+reports/tax summary.txt
+reports/travel claims.txt
+TechCorp/Finance/archive/first-original.txt
+TechCorp/Finance/tax summary.txt
+TechCorp/Finance/travel claims.txt

@@ -1,0 +1,17 @@
+ 
+mv -- "travel ckaims.txt" ../reports/
+mv -- "$OSLAB_WORKSPACE/lab2/incoming/tax summary.txt" 
+"$OSLAB_WORKSPACE/lab2/reports/ "
+
+cp -- "reports/travel claims.txt" "TechCorp/Finance/"
+cp -- "reports/tax summary.txt" "TechCorp/Finance/"
+cp -- "reports/travel claims.txt" "TechCorp/Finance/archive/first-original.txt"
+
+cat "../Finance/travel claims.txt"
+cat "$OSLAB_WORKSPACE/lab2/TechCorp/Finance?travel claims.txt"
+
+For step 3 I used relative paths.
+Absolute paths would be better when working from different directories because they always point to the same location.
+
+Error: cat: reports/travel claims.txt: No such file or directory 
+Fix: ../../reports/travel claims.txt
