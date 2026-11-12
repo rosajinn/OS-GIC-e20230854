@@ -1,0 +1,4 @@
+grep '^paid,' data/events.csv | tee evidence/selected.txt
+grep '^paid,' data/events.csv | cut -d, -f2 | tee evidence/fields.txt
+grep '^paid,' data/events.csv | wc -1 > evidence/normal.txt
+
