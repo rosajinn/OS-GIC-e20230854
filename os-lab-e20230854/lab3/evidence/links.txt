@@ -1,0 +1,28 @@
+
+=== BEFORE RENAME ===
+19142921 -rw-rw-r-- 2 gic-thea-rosa gic-thea-rosa 12 Nov 12 16:24 cloud-hard.txt
+19142935 lrwxrwxrwx 1 gic-thea-rosa gic-thea-rosa  9 Nov 12 16:34 cloud-soft.txt -> cloud.txt
+19142921 -rw-rw-r-- 2 gic-thea-rosa gic-thea-rosa 12 Nov 12 16:24 cloud.txt
+hard: version 779
+soft: version 779
+stored target: cloud.txt
+
+=== AFTER RENAME, BEFORE REPAIR ===
+19142921 -rw-rw-r-- 2 gic-thea-rosa gic-thea-rosa 12 Nov 12 16:24 cloud-draft.txt
+19142921 -rw-rw-r-- 2 gic-thea-rosa gic-thea-rosa 12 Nov 12 16:24 cloud-hard.txt
+19142935 lrwxrwxrwx 1 gic-thea-rosa gic-thea-rosa  9 Nov 12 16:34 cloud-soft.txt -> cloud.txt
+hard: version 779
+stored target: cloud.txt
+soft: cat: cloud-soft.txt: No such file or directory
+
+=== AFTER REPAIR ===
+19142921 -rw-rw-r-- 2 gic-thea-rosa gic-thea-rosa 12 Nov 12 16:24 cloud-draft.txt
+19142921 -rw-rw-r-- 2 gic-thea-rosa gic-thea-rosa 12 Nov 12 16:24 cloud-hard.txt
+19142935 lrwxrwxrwx 1 gic-thea-rosa gic-thea-rosa 15 Nov 12 16:36 cloud-soft.txt -> cloud-draft.txt
+stored target: cloud-draft.txt
+hard: version 779
+soft: version 779
+
+
+Decision: I used a relatives target because it continues to work if the entire folder is moved. An absolute path would break if the folder were moved to a different location.
+

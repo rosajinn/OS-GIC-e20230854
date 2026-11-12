@@ -1,0 +1,6 @@
+<notes/cloud12.txt>
+<notes/cloud1.txt>
+<notes/cloud2.txt>
+<notes/cloud1.txt>
+<notes/cloud2.txt>
+<notes/*.txt>
