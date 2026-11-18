@@ -1,0 +1,20 @@
+  691  nano server.c
+  692  nano client.c
+  693  gcc -o server server.c
+  694  gcc -o client client.c
+  695  ls
+  696  ./server
+  697  ./client
+  698  nano server.c
+  699  nano client.c
+  700  gcc -o server server.c
+  701  gcc -o client client.c
+  702  ./server
+  703  ./client
+  704  ./server
+  705  ./server > result_server.txt 2>&1 &
+  706  sleep 1
+  707  ./client > result_client.txt 2>&1
+  708  wait
+  709  cat result_server.txt result_client.txt > result_socket.txt
+  710  history | tail -n 20 > command_used_socket.txt

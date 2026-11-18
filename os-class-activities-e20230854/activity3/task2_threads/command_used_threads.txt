@@ -1,0 +1,20 @@
+  703  ./client
+  704  ./server
+  705  ./server > result_server.txt 2>&1 &
+  706  sleep 1
+  707  ./client > result_client.txt 2>&1
+  708  wait
+  709  cat result_server.txt result_client.txt > result_socket.txt
+  710  history | tail -n 20 > command_used_socket.txt
+  711  cd ../task2_threads
+  712  nano threads.c
+  713  gcc -o threads threads.c -pthread
+  714  nano threads.c
+  715  gcc -o threads threads.c -pthread
+  716  ./threads > result_threads.txt 2>&1
+  717  cat result_threads.txt
+  718  nano threads_mutex.c
+  719  gcc -o threads_mutex threads_mutex.c -pthread
+  720  ./threads_mutex > result_threads_mutex.txt 2>&1
+  721  cat result_threads_mutex.txt
+  722  history | tail -n 20 > command_used_threads.txt
