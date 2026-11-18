@@ -1,0 +1,20 @@
+  590  ./task2
+  591  ./task3_shm
+  592  ./task4_mq
+  593  cd task1
+  594  pwd
+  595  nano forkchild.c
+  596  gcc -o forkchild forkchild.c
+  597  ./forkchild
+  598  ls -l
+  599  ./forkchild
+  600  ls -l
+  601  nano forkchild.c
+  602  ls -l forkchild.c
+  603  gcc -o forkchild forkchild.c
+  604  ls -l
+  605  ./forkchild
+  606  ps -ef --forest | grep forkchild
+  607  ./forkchild > result_forkchild.txt 2>&1
+  608  cat result_forkchild.txt
+  609  history | tail -n 20 > command_used_forkchild.txt

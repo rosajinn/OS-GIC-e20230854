@@ -1,0 +1,20 @@
+  619  history | tail -n 20 > command_used_shm.txt
+  620  cd ../task3_shm
+  621  cd os-class-activities-e20230854/activity2
+  622  ls
+  623  cd ../task3_shm
+  624  cd ~/os-gic-e20230854/os-class-activities-e20230854/activity2/task3_shm
+  625  ls
+  626  cd ../task4_mq
+  627  pswd
+  628  pwd
+  629  ls
+  630  nano common.h
+  631  nano sender.c
+  632  nano receiver.c
+  633  gcc -o sender sender.c -lrt
+  634  gcc -o receiver receiver.c -lrt
+  635  ./sender
+  636  ./receiver > result-mq-ipc.txt
+  637  cat result-mq-ipc.txt
+  638  history | tail -n 20 > command_used_mq.txt

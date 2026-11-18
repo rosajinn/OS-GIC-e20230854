@@ -1,0 +1,20 @@
+  600  ls -l
+  601  nano forkchild.c
+  602  ls -l forkchild.c
+  603  gcc -o forkchild forkchild.c
+  604  ls -l
+  605  ./forkchild
+  606  ps -ef --forest | grep forkchild
+  607  ./forkchild > result_forkchild.txt 2>&1
+  608  cat result_forkchild.txt
+  609  history | tail -n 20 > command_used_forkchild.txt
+  610  ls -l
+  611  cd ../task3_shm
+  612  nano shm-producer.c
+  613  nano shm-consumer.c
+  614  gcc -o shm-producer shm-producer.c -lrt
+  615  gcc -o shm-consumer shm-consumer.c -lrt
+  616  ./shm-producer
+  617  ./shm-consumer > result-shm-ipc.txt
+  618  cat result-shm-ipc.txt
+  619  history | tail -n 20 > command_used_shm.txt
